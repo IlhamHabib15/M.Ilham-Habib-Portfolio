@@ -7,7 +7,11 @@
 <meta name="description" content="Interactive portfolio of M. Ilham Habib — GIS &amp; Remote Sensing Analyst and Spatial Data Analyst. Case studies in land cover mapping, location intelligence and urban analytics.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#071a17">
+<meta property="og:title" content="M. Ilham Habib — GIS &amp; Remote Sensing Portfolio 2026">
+<meta property="og:description" content="Case studies in land cover mapping, location intelligence and urban analytics.">
+<meta property="og:type" content="website">
 <style>
 :root{
   --paper:#f7f5f0; --paper-deep:#efece4; --card:#fdfcfa;
@@ -390,9 +394,89 @@ h1,h2,h3,h4{font-family:var(--font-heading);letter-spacing:-.01em}
 @media(max-width:767px){
   .hero h1{font-size:2.6rem}
 }
+
+/* ═══ Redesign 2026 ═══ */
+:root{--paper:#f5f3ec;--paper-deep:#ebe7da;--card:#fff;--pine:#1b5446;--pine-deep:#0a2620;--pine-soft:#2f7a66;--night:#071a17;--gold:#e6b64c;--gold-deep:#8f6a12;--gold-soft:rgba(230,182,76,.18);--mint:#8fd3bb;--card-dark:#10352c;--font-heading:'Bricolage Grotesque','Segoe UI',Arial,sans-serif;--font-body:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',Arial,sans-serif}
+.kicker{text-transform:none;letter-spacing:.02em;font-size:.85rem;font-weight:600}
+.card-cat,.fact .k,.index-strip .k,.bnsp-cap .k,.m-impl .k,.m-limit .k,.modal-head .k,.m-sec .k{font-size:.78rem}
+.m-table th{text-transform:none;letter-spacing:0}
+.cc .k2{text-transform:none;letter-spacing:.02em;font-size:.74rem}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.progress{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--gold),var(--mint));z-index:60}
+.reveal{transform:translateY(14px)}
+/* nav */
+.nav{background:rgba(7,26,23,.5);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav.scrolled{background:rgba(7,26,23,.9);box-shadow:0 10px 30px rgba(0,0,0,.25);border-bottom-color:rgba(255,255,255,.08)}
+.brand-name{color:#fff;font-size:.9rem}.brand-sub{color:rgba(255,255,255,.55);letter-spacing:.1em}
+.brand-badge{background:var(--gold);color:var(--pine-deep)}
+.nav-links a{color:rgba(255,255,255,.72)}.nav-links a:hover{color:#fff;background:rgba(255,255,255,.08)}
+.nav-links a.active{background:var(--gold-soft);color:var(--gold)}
+.nav-toggle{color:#fff}
+.mobile-menu{background:var(--night);border-bottom-color:rgba(255,255,255,.08)}
+.mobile-menu a{color:#fff}.mobile-menu a:hover{background:rgba(255,255,255,.06)}
+.mobile-menu a.active{background:var(--gold-soft);color:var(--gold)}
+/* hero */
+.hero{background:radial-gradient(1100px 600px at 85% -10%,rgba(47,122,102,.6),transparent 60%),radial-gradient(800px 500px at -10% 110%,rgba(230,182,76,.15),transparent 60%),var(--night);color:#fff}
+.hero::after{background-image:none}.hero-bg{background:none}
+.contours{position:absolute;inset:0;width:100%;height:100%}
+.contours path{fill:none;stroke:var(--mint);stroke-width:1;stroke-opacity:.28;stroke-dasharray:5 11;animation:drift 70s linear infinite}
+.contours path:nth-child(even){stroke:var(--gold);stroke-opacity:.22;animation-direction:reverse;animation-duration:100s}
+@keyframes drift{to{stroke-dashoffset:-900}}
+.hero .kicker{color:var(--gold)}
+.hero h1{color:#fff;font-size:clamp(3rem,8.5vw,5.8rem);line-height:.98;letter-spacing:-.035em;font-weight:800}
+.hero-role{color:var(--mint)}.hero-tagline{color:rgba(255,255,255,.74)}
+.chip{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15);color:#fff;box-shadow:none;backdrop-filter:blur(6px)}
+.chip .icon{color:var(--gold)}
+.btn-primary{background:var(--gold);color:var(--pine-deep);box-shadow:0 14px 34px -10px rgba(230,182,76,.55)}
+.btn-primary:hover{background:#f2c869;transform:translateY(-2px)}
+.btn-outline{border-color:rgba(255,255,255,.3);color:#fff}.btn-outline:hover{background:rgba(255,255,255,.08)}
+.stat-box{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.12);box-shadow:none}
+.stat-num{color:var(--gold);font-size:2.2rem}.stat-label{color:rgba(255,255,255,.68);font-size:.78rem}
+.hero-map{border-color:rgba(230,182,76,.4);border-radius:1.5rem;transform:rotate(1.5deg);box-shadow:0 40px 80px -24px rgba(0,0,0,.7),0 0 0 8px rgba(255,255,255,.04)}
+.hero-portrait-chip{background:rgba(7,26,23,.88);border-color:rgba(255,255,255,.16);backdrop-filter:blur(10px)}
+.hero-portrait-chip .n,.hero-mobile-strip .n{color:#fff}
+.hero-portrait-chip .l,.hero-mobile-strip .l,.hero-available{color:rgba(255,255,255,.68)}
+.hero-portrait-chip img,.hero-mobile-strip img{border-color:var(--gold)}
+.hero-mobile-strip .inner{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.14);box-shadow:none}
+/* sections */
+.section.tinted{background:var(--paper-deep)}
+.sec-head h2,.contact h2{font-size:clamp(1.9rem,4vw,2.9rem);letter-spacing:-.028em;line-height:1.08;font-weight:700}
+.about-card,.fact,.tool,.cert,.award,.teach-fig,.bnsp-card,.m-step,.teach-note{border-radius:1.25rem;box-shadow:0 1px 2px rgba(10,38,32,.05),0 14px 32px -14px rgba(10,38,32,.14)}
+.fact,.tool,.cert,.award{transition:transform .3s,box-shadow .3s}
+.fact:hover,.tool:hover,.cert:hover,.award:hover{transform:translateY(-3px);box-shadow:0 22px 44px -16px rgba(10,38,32,.28)}
+.about-bio{font-size:1.1rem;line-height:1.85}
+.tool-ic{background:linear-gradient(135deg,var(--pine),var(--pine-soft));border-radius:.75rem}
+.timeline{border-left:2px solid rgba(143,106,18,.35)}
+.timeline li::before{border-color:var(--gold);background:var(--pine-deep);transform:translateX(-7px)}
+.timeline .role{font-size:1.02rem}
+.award .rank{background:var(--gold)}
+.topic{background:rgba(27,84,70,.08)}
+/* projects */
+.projects{background:radial-gradient(900px 500px at 100% 0,rgba(47,122,102,.35),transparent 60%),var(--night)}
+.projects::before{opacity:.07}
+.card{background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.02));border-color:rgba(255,255,255,.1);border-radius:1.5rem;transition:transform .35s,border-color .35s,box-shadow .35s}
+.card:hover{transform:translateY(-6px);border-color:rgba(230,182,76,.55);box-shadow:0 34px 60px -24px rgba(0,0,0,.7)}
+.card-cover{height:13.5rem;background:#f4f1e8}
+.card-num{background:var(--night);color:var(--gold)}
+.card-title{font-size:1.15rem;letter-spacing:-.01em}
+.card-metric{border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.04);border-radius:.75rem}
+.card-metric .v{font-size:1.05rem}.card-metric .l{font-size:.7rem}
+.card-tools span{font-size:.7rem}
+.card-open{font-size:.82rem}
+@media(hover:none){.card-arrow{opacity:1}}
+.filter-btn.active{box-shadow:0 8px 20px -6px rgba(230,182,76,.45)}
+.index-strip{border-radius:1.25rem}
+/* contact + modal */
+.contact{background:radial-gradient(800px 460px at 95% 0,rgba(47,122,102,.5),transparent 60%),var(--night)}
+.cc{border-radius:1rem}
+.cc:hover{border-color:rgba(230,182,76,.6)}
+.modal-head{background:linear-gradient(135deg,var(--pine-deep),var(--pine))}
+.modal{border-radius:1.5rem}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
+<div class="progress" id="progress" aria-hidden="true"></div>
 
 <header class="nav" id="nav">
   <nav class="container nav-inner" aria-label="Main navigation">
@@ -416,7 +500,7 @@ h1,h2,h3,h4{font-family:var(--font-heading);letter-spacing:-.01em}
 <main>
 
 <section id="home" class="hero">
-  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-bg" aria-hidden="true"><svg class="contours" viewBox="0 0 1440 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path d="M988,330 L994,334 L999,338 L1002,343 L1004,348 L1004,352 L1003,357 L1000,361 L996,364 L992,367 L988,370 L983,373 L979,376 L976,379 L972,382 L967,384 L962,385 L957,386 L951,387 L946,386 L940,386 L935,385 L931,385 L927,386 L923,387 L920,389 L916,392 L913,394 L909,396 L904,398 L900,399 L896,398 L891,396 L887,394 L884,392 L880,389 L877,387 L873,386 L869,385 L865,385 L860,386 L854,386 L849,387 L843,386 L838,385 L833,384 L828,382 L824,379 L821,376 L817,373 L812,370 L808,367 L804,364 L800,361 L797,357 L796,352 L796,348 L798,343 L801,338 L806,334 L812,330 L819,327 L825,324 L830,321 L833,319 L835,316 L836,313 L836,310 L836,307 L836,304 L836,300 L837,297 L838,294 L840,291 L841,288 L843,285 L845,281 L847,278 L849,273 L850,269 L853,265 L856,261 L860,257 L864,255 L869,254 L875,254 L880,255 L885,256 L890,257 L895,258 L900,259 L905,258 L910,257 L915,256 L920,255 L925,254 L931,254 L936,255 L940,257 L944,261 L947,265 L950,269 L951,273 L953,278 L955,281 L957,285 L959,288 L960,291 L962,294 L963,297 L964,300 L964,304 L964,307 L964,310 L964,313 L965,316 L967,319 L970,321 L975,324 L981,327 L988,330Z"/><path d="M1042,330 L1048,336 L1053,343 L1055,350 L1056,356 L1055,363 L1053,370 L1050,376 L1047,382 L1044,389 L1040,395 L1036,401 L1030,406 L1023,410 L1015,412 L1005,414 L994,413 L983,412 L972,409 L962,406 L954,404 L947,403 L941,404 L937,406 L932,410 L928,415 L924,420 L919,424 L913,428 L907,431 L900,433 L893,433 L886,433 L880,433 L873,433 L866,433 L858,433 L850,434 L842,434 L834,434 L826,433 L819,430 L813,426 L808,421 L803,416 L799,410 L796,405 L791,400 L786,396 L780,392 L773,389 L765,385 L758,381 L752,375 L749,369 L747,363 L749,356 L753,349 L758,342 L765,336 L772,330 L779,325 L784,320 L789,316 L792,312 L794,307 L796,303 L798,299 L801,295 L803,291 L807,287 L809,283 L812,279 L813,274 L814,268 L814,261 L813,253 L813,244 L813,234 L815,225 L819,217 L824,211 L831,207 L840,205 L849,204 L858,206 L868,208 L876,211 L885,213 L892,215 L900,217 L907,217 L915,218 L922,219 L929,221 L935,224 L941,228 L947,232 L952,237 L956,242 L961,246 L966,249 L971,251 L977,253 L984,255 L990,258 L996,261 L1001,264 L1005,269 L1006,275 L1007,281 L1006,287 L1005,293 L1004,298 L1005,303 L1008,307 L1013,311 L1019,315 L1027,319 L1035,324 L1042,330Z"/><path d="M1099,330 L1099,338 L1097,347 L1095,355 L1093,363 L1091,371 L1090,379 L1090,388 L1090,398 L1090,407 L1087,416 L1082,425 L1074,431 L1063,436 L1050,438 L1035,438 L1020,437 L1005,434 L992,431 L980,429 L971,428 L963,429 L956,431 L950,435 L944,439 L938,443 L931,447 L924,451 L916,454 L908,457 L900,460 L891,464 L882,468 L872,474 L860,480 L848,486 L835,490 L822,493 L809,493 L798,491 L788,485 L780,477 L775,468 L771,458 L768,448 L765,438 L761,430 L757,423 L751,417 L744,411 L738,405 L731,399 L726,392 L723,384 L722,376 L723,368 L725,360 L728,352 L731,344 L733,337 L734,330 L734,323 L734,316 L734,309 L736,302 L738,295 L743,289 L750,284 L757,279 L764,275 L771,270 L776,266 L779,260 L780,252 L779,243 L777,232 L776,220 L776,207 L777,195 L782,184 L788,175 L797,169 L808,164 L819,162 L831,161 L843,161 L855,162 L867,162 L878,164 L889,165 L900,168 L910,172 L920,178 L929,185 L936,194 L942,203 L948,213 L953,220 L958,227 L963,230 L971,232 L979,232 L989,232 L1000,231 L1012,231 L1023,232 L1033,235 L1040,239 L1046,245 L1050,252 L1054,259 L1056,266 L1060,273 L1064,280 L1069,286 L1076,292 L1082,299 L1089,306 L1094,314 L1097,322 L1099,330Z"/><path d="M1154,330 L1145,340 L1136,350 L1129,359 L1125,368 L1122,378 L1122,388 L1122,398 L1122,409 L1120,420 L1115,429 L1107,438 L1097,444 L1084,449 L1070,452 L1055,454 L1042,456 L1029,458 L1018,460 L1008,463 L999,467 L990,471 L981,475 L971,478 L961,479 L950,480 L940,480 L930,480 L920,482 L910,485 L900,491 L889,499 L877,509 L862,520 L847,530 L830,539 L813,545 L796,547 L780,545 L767,539 L756,530 L747,519 L740,507 L734,494 L729,482 L724,471 L719,461 L714,451 L710,441 L707,430 L706,420 L707,409 L709,398 L713,388 L716,378 L719,369 L719,361 L716,353 L711,346 L703,338 L694,330 L686,321 L679,311 L675,301 L675,292 L678,282 L684,274 L693,266 L702,259 L710,253 L717,245 L722,237 L725,228 L726,217 L728,206 L730,194 L734,182 L740,172 L748,162 L758,155 L769,148 L781,143 L793,139 L806,134 L818,129 L831,124 L844,120 L858,117 L872,116 L886,117 L900,123 L913,131 L925,143 L934,156 L942,170 L949,184 L955,195 L961,203 L968,209 L976,211 L986,211 L997,210 L1010,209 L1023,208 L1036,209 L1049,211 L1060,214 L1071,219 L1082,224 L1093,230 L1104,236 L1116,242 L1129,248 L1142,256 L1154,264 L1163,274 L1169,284 L1171,296 L1168,307 L1163,319 L1154,330Z"/><path d="M1209,330 L1196,342 L1184,354 L1174,365 L1167,375 L1161,386 L1155,396 L1149,406 L1141,416 L1131,424 L1120,432 L1108,438 L1096,444 L1086,450 L1076,457 L1069,465 L1063,474 L1057,485 L1051,496 L1044,507 L1035,517 L1024,524 L1011,529 L996,530 L981,530 L966,528 L952,526 L939,525 L926,527 L913,532 L900,540 L886,549 L870,559 L853,569 L834,577 L816,581 L798,582 L780,580 L764,574 L749,566 L736,557 L723,548 L711,538 L699,528 L688,518 L679,507 L672,494 L668,481 L667,465 L671,449 L678,433 L686,417 L696,403 L704,390 L709,380 L709,371 L705,363 L695,356 L683,348 L668,340 L654,330 L641,319 L632,307 L626,295 L624,283 L625,271 L628,259 L631,247 L634,235 L637,223 L640,210 L643,196 L647,183 L654,171 L664,160 L676,151 L691,144 L708,140 L725,137 L742,135 L757,133 L772,129 L785,123 L797,116 L810,107 L823,99 L837,92 L852,87 L868,86 L884,89 L900,96 L915,106 L928,118 L939,131 L950,142 L960,152 L969,160 L979,165 L990,168 L1001,171 L1013,173 L1025,175 L1037,179 L1049,183 L1060,188 L1071,193 L1084,197 L1099,201 L1116,204 L1136,207 L1158,211 L1181,215 L1203,222 L1222,231 L1237,243 L1245,256 L1247,271 L1244,286 L1235,302 L1222,316 L1209,330Z"/><path d="M1263,330 L1253,345 L1244,359 L1234,372 L1222,385 L1208,396 L1192,406 L1173,414 L1153,420 L1134,425 L1117,430 L1103,435 L1093,442 L1087,451 L1086,464 L1086,479 L1088,497 L1088,515 L1085,534 L1079,550 L1069,564 L1055,574 L1039,580 L1022,584 L1004,587 L987,589 L969,591 L952,595 L935,600 L918,606 L900,612 L881,616 L862,618 L843,617 L825,613 L807,607 L791,599 L775,590 L760,582 L744,575 L727,570 L709,565 L691,560 L673,554 L657,546 L645,534 L637,520 L633,503 L635,484 L642,464 L650,445 L659,428 L667,413 L671,400 L671,389 L667,380 L658,371 L647,362 L635,352 L623,342 L613,330 L604,318 L598,305 L592,291 L586,277 L580,261 L574,245 L566,228 L559,209 L555,189 L554,170 L557,152 L567,136 L582,124 L603,116 L627,111 L653,110 L679,111 L703,113 L725,114 L744,113 L760,110 L775,105 L789,99 L803,92 L818,86 L834,83 L851,81 L868,83 L884,87 L900,92 L915,97 L930,101 L945,103 L960,104 L976,104 L992,104 L1008,105 L1024,107 L1039,112 L1052,119 L1063,129 L1073,139 L1082,150 L1092,159 L1104,167 L1120,172 L1139,175 L1161,178 L1187,181 L1213,185 L1239,192 L1261,201 L1278,214 L1289,229 L1295,245 L1294,263 L1289,281 L1281,298 L1272,314 L1263,330Z"/><path d="M1309,330 L1308,347 L1302,364 L1291,380 L1274,394 L1252,405 L1226,415 L1199,422 L1173,427 L1150,432 L1132,437 L1121,445 L1115,455 L1114,469 L1116,485 L1118,504 L1119,525 L1117,545 L1112,564 L1103,581 L1092,596 L1078,609 L1062,621 L1046,634 L1028,646 L1010,658 L990,671 L970,681 L947,689 L924,693 L900,692 L877,685 L855,674 L835,658 L817,641 L802,623 L787,608 L773,595 L757,586 L740,581 L722,577 L702,574 L682,570 L663,564 L647,554 L635,542 L627,527 L622,510 L620,493 L619,476 L618,460 L615,446 L609,434 L602,422 L592,410 L583,398 L575,385 L569,372 L566,358 L564,344 L564,330 L564,316 L561,301 L555,286 L545,270 L532,251 L518,231 L503,208 L492,185 L486,161 L487,139 L496,120 L512,105 L535,93 L562,86 L591,83 L620,82 L648,81 L674,81 L698,81 L719,80 L740,78 L759,77 L779,77 L798,79 L817,83 L836,88 L853,93 L869,97 L885,98 L900,96 L916,90 L933,81 L952,69 L972,58 L995,48 L1017,41 L1040,39 L1060,42 L1079,50 L1094,61 L1108,74 L1120,88 L1132,101 L1146,111 L1162,120 L1180,128 L1201,135 L1223,142 L1244,151 L1263,162 L1278,176 L1290,191 L1297,208 L1301,226 L1303,244 L1304,261 L1305,279 L1306,296 L1308,313 L1309,330Z"/><path d="M1334,330 L1336,348 L1332,366 L1321,383 L1303,399 L1281,412 L1258,423 L1235,433 L1216,443 L1201,453 L1190,464 L1184,477 L1179,492 L1176,509 L1172,526 L1166,542 L1157,558 L1146,573 L1134,588 L1121,603 L1108,618 L1095,636 L1082,657 L1067,679 L1051,702 L1032,724 L1010,743 L985,757 L957,764 L928,762 L900,752 L873,736 L849,715 L828,692 L810,669 L794,648 L778,630 L763,616 L747,606 L730,597 L714,588 L697,579 L683,569 L670,558 L658,545 L648,532 L638,519 L626,508 L612,498 L594,489 L574,481 L551,472 L529,462 L508,450 L491,436 L480,420 L475,402 L476,384 L481,365 L488,347 L494,330 L498,313 L497,296 L491,278 L481,259 L470,238 L459,215 L451,192 L449,169 L452,148 L463,128 L479,111 L500,97 L523,86 L547,76 L572,67 L595,59 L618,51 L640,44 L664,39 L688,36 L714,38 L740,43 L766,52 L792,63 L815,75 L835,86 L853,93 L869,95 L884,91 L900,80 L917,65 L937,47 L960,28 L985,12 L1011,-1 L1038,-9 L1064,-11 L1088,-8 L1112,-2 L1134,6 L1155,16 L1176,26 L1198,35 L1220,45 L1242,56 L1262,69 L1279,85 L1291,103 L1299,123 L1301,145 L1300,167 L1296,189 L1292,210 L1290,229 L1291,246 L1296,263 L1305,279 L1316,295 L1327,312 L1334,330Z"/><path d="M1329,330 L1328,348 L1324,366 L1316,383 L1307,399 L1299,416 L1293,432 L1290,450 L1289,468 L1288,488 L1287,509 L1283,529 L1275,548 L1263,565 L1246,579 L1226,591 L1204,600 L1183,610 L1163,620 L1146,633 L1131,650 L1117,671 L1104,696 L1088,722 L1069,747 L1047,768 L1021,784 L992,792 L961,793 L930,786 L900,774 L872,757 L846,739 L823,721 L801,704 L780,688 L760,673 L742,659 L726,643 L711,626 L700,607 L691,588 L684,568 L678,550 L670,534 L659,523 L643,515 L620,511 L591,510 L557,508 L520,505 L483,500 L450,490 L422,477 L402,460 L389,439 L384,418 L385,395 L388,373 L392,351 L394,330 L395,309 L394,287 L393,266 L393,244 L396,222 L404,201 L417,182 L434,164 L455,149 L478,135 L499,122 L519,109 L536,94 L551,79 L565,62 L579,44 L595,28 L614,15 L637,6 L664,3 L693,5 L723,12 L753,23 L780,35 L805,46 L826,52 L845,54 L863,49 L881,39 L900,26 L921,10 L944,-5 L969,-18 L995,-28 L1022,-34 L1049,-38 L1077,-40 L1106,-40 L1136,-40 L1167,-40 L1200,-40 L1234,-37 L1266,-32 L1295,-21 L1320,-6 L1337,15 L1347,41 L1347,70 L1341,101 L1330,131 L1316,160 L1304,186 L1295,209 L1291,228 L1293,246 L1299,262 L1308,278 L1318,295 L1325,312 L1329,330Z"/><path d="M1308,330 L1303,347 L1300,364 L1303,381 L1311,400 L1324,421 L1342,445 L1360,471 L1377,500 L1388,529 L1391,557 L1386,582 L1371,604 L1350,621 L1323,635 L1294,645 L1265,654 L1238,663 L1213,675 L1191,689 L1171,706 L1151,724 L1129,742 L1105,758 L1079,771 L1050,778 L1020,781 L989,779 L958,773 L929,767 L900,760 L872,754 L845,749 L818,745 L791,741 L765,734 L741,722 L719,707 L702,686 L689,661 L680,634 L675,608 L670,584 L663,564 L652,551 L634,543 L610,539 L579,538 L542,538 L503,536 L464,531 L428,523 L396,510 L370,493 L349,473 L333,452 L319,429 L307,405 L296,381 L286,356 L278,330 L274,304 L276,278 L285,252 L303,229 L330,208 L362,190 L399,176 L436,165 L470,155 L499,145 L522,133 L538,120 L549,103 L557,83 L565,62 L575,42 L589,23 L608,8 L630,-2 L656,-8 L683,-10 L710,-11 L736,-11 L761,-13 L784,-18 L806,-25 L828,-35 L851,-46 L875,-56 L900,-64 L926,-69 L953,-70 L979,-68 L1005,-65 L1031,-62 L1059,-61 L1088,-63 L1121,-67 L1157,-73 L1195,-79 L1236,-83 L1275,-83 L1311,-76 L1341,-62 L1363,-40 L1375,-12 L1379,20 L1376,54 L1367,87 L1356,119 L1345,148 L1337,174 L1331,198 L1329,219 L1328,238 L1327,257 L1325,276 L1321,295 L1315,313 L1308,330Z"/><path d="M1311,330 L1306,347 L1311,365 L1326,384 L1349,406 L1377,432 L1406,462 L1433,494 L1453,527 L1463,560 L1464,591 L1455,618 L1438,643 L1415,664 L1390,683 L1363,700 L1336,717 L1309,734 L1282,751 L1253,765 L1223,777 L1190,785 L1154,787 L1118,783 L1081,775 L1045,764 L1012,751 L981,740 L953,734 L926,732 L900,735 L873,742 L845,751 L815,758 L785,762 L756,761 L729,752 L705,737 L685,717 L668,694 L654,671 L640,650 L625,633 L607,619 L585,610 L558,603 L528,598 L497,591 L466,582 L437,570 L411,556 L388,539 L367,520 L346,500 L325,479 L301,458 L275,436 L248,413 L222,387 L200,359 L186,330 L183,300 L192,270 L214,243 L248,219 L290,199 L336,183 L383,171 L425,161 L461,151 L490,141 L512,128 L528,114 L541,98 L554,81 L567,64 L583,49 L601,35 L621,22 L641,11 L660,-2 L679,-17 L697,-35 L714,-57 L733,-81 L754,-106 L778,-129 L805,-148 L835,-162 L867,-167 L900,-165 L932,-157 L962,-144 L991,-130 L1019,-118 L1047,-109 L1076,-104 L1108,-103 L1142,-105 L1179,-108 L1216,-108 L1253,-105 L1286,-95 L1315,-80 L1337,-59 L1354,-33 L1364,-5 L1371,25 L1376,53 L1381,80 L1385,106 L1390,130 L1395,154 L1397,177 L1395,201 L1388,225 L1376,249 L1359,272 L1341,293 L1323,312 L1311,330Z"/></svg></div>
   <div class="container hero-grid">
     <div>
       <p class="kicker reveal">GIS &amp; Remote Sensing · Spatial Data Science</p>
@@ -869,7 +953,7 @@ h1,h2,h3,h4{font-family:var(--font-heading);letter-spacing:-.01em}
       </div>
     </div>
     <div class="bottom-bar">
-      <p>© 2026 M. Ilham Habib · Padang, Indonesia · Standalone HTML version</p>
+      <p>© 2026 M. Ilham Habib · Padang, Indonesia</p>
       <button class="to-top" id="toTop"><svg class="icon " aria-hidden="true" viewBox="0 0 24 24"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg> Back to top</button>
     </div>
   </div>
@@ -1211,6 +1295,11 @@ document.getElementById("toTop").addEventListener("click", function () {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
+</script>
+<script>
+(function(){var p=document.getElementById("progress");if(!p)return;
+function u(){var h=document.documentElement.scrollHeight-innerHeight;p.style.transform="scaleX("+(h>0?Math.min(scrollY/h,1):0)+")"}
+addEventListener("scroll",u,{passive:true});u()})();
 </script>
 </body>
 </html>
